@@ -8,15 +8,14 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-    jit: true,
-    purge: ["./public/**/*.html", "./src/**/*.{js,ts,tsx}"],
+    content: ["./public/**/*.html", "./src/**/*.{js,ts,tsx}"],
     important: true,
     darkMode: "class",
     theme: {
         extend: {
             colors: {
-                gray: colors.warmGray,
-                green: colors.lime,
+                gray: colors.stone,
+                green: colors.emerald,
                 orange: colors.amber,
                 blue: {
                     light: "#75A9EC",
@@ -77,12 +76,6 @@ module.exports = {
             grayscale: "grayscale(1)",
             invert: "invert(1)",
             "brightness-10": "brightness(10)",
-        },
-    },
-    variants: {
-        extend: {
-            opacity: ["disabled"],
-            display: ["dark"],
         },
     },
     plugins: [
