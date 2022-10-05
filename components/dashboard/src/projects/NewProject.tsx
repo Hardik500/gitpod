@@ -530,7 +530,7 @@ export default function NewProject() {
                         onClick={() => setSelectedTeamOrUser(user)}
                     >
                         <input type="radio" />
-                        <div className="flex-grow overflow-ellipsis truncate flex flex-col">
+                        <div className="flex-grow text-ellipsis truncate flex flex-col">
                             <span className="font-semibold">{userFullName}</span>
                             <span className="text-sm text-gray-400">Personal account</span>
                         </div>
@@ -542,7 +542,7 @@ export default function NewProject() {
                             onClick={() => setSelectedTeamOrUser(t)}
                         >
                             <input type="radio" />
-                            <div className="flex-grow overflow-ellipsis truncate flex flex-col">
+                            <div className="flex-grow text-ellipsis truncate flex flex-col">
                                 <span className="font-semibold">{t.name}</span>
                                 <span className="text-sm text-gray-400">
                                     {!!teamMembers[t.id]
@@ -557,7 +557,7 @@ export default function NewProject() {
                     <label className="w-80 px-4 py-3 flex flex-col cursor-pointer rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800">
                         <div className="flex space-x-3 items-center relative">
                             <input type="radio" onChange={() => setShowNewTeam(!showNewTeam)} />
-                            <div className="flex-grow overflow-ellipsis truncate flex flex-col">
+                            <div className="flex-grow text-ellipsis truncate flex flex-col">
                                 <span className="font-semibold">Create new team</span>
                                 <span className="text-sm text-gray-400">Collaborate with others</span>
                             </div>
@@ -705,7 +705,7 @@ function GitProviders(props: {
                                 onClick={() => selectProvider(ap)}
                             >
                                 {iconForAuthProvider(ap.authProviderType)}
-                                <span className="pt-2 pb-2 mr-3 text-sm my-auto font-medium truncate overflow-ellipsis">
+                                <span className="pt-2 pb-2 mr-3 text-sm my-auto font-medium truncate text-ellipsis">
                                     Continue with {simplifyProviderName(ap.host)}
                                 </span>
                             </button>

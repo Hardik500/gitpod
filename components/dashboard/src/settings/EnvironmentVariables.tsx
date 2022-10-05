@@ -258,10 +258,8 @@ export default function EnvVars() {
                     {envVars.map((variable) => {
                         return (
                             <Item className="whitespace-nowrap">
-                                <ItemField className="w-5/12 overflow-ellipsis truncate my-auto">
-                                    {variable.name}
-                                </ItemField>
-                                <ItemField className="w-5/12 overflow-ellipsis truncate text-sm text-gray-400 my-auto">
+                                <ItemField className="w-5/12 text-ellipsis truncate my-auto">{variable.name}</ItemField>
+                                <ItemField className="w-5/12 text-ellipsis truncate text-sm text-gray-400 my-auto">
                                     {variable.repositoryPattern}
                                 </ItemField>
                                 <ItemFieldContextMenu

@@ -134,7 +134,7 @@ function UserEntry(p: { user: User }) {
                     <div className="font-medium text-gray-800 dark:text-gray-100 truncate hover:text-blue-600 dark:hover:text-blue-400">
                         {p.user.fullName}
                     </div>
-                    <div className="text-sm overflow-ellipsis truncate text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                    <div className="text-sm text-ellipsis truncate text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                         {email}
                     </div>
                 </div>

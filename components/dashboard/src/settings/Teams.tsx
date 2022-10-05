@@ -537,14 +537,14 @@ function AllTeams() {
                                 </div>
                             </div>
                             <div className="p-0 my-auto flex flex-col w-6/12">
-                                <span className="my-auto font-medium truncate overflow-ellipsis">
+                                <span className="my-auto font-medium truncate text-ellipsis">
                                     {
                                         Plans.getAvailableTeamPlans().filter(
                                             (p) => p.chargebeeId === pendingPlanPurchase.planId,
                                         )[0]?.name
                                     }
                                 </span>
-                                <span className="text-sm my-auto text-gray-400 truncate overflow-ellipsis">
+                                <span className="text-sm my-auto text-gray-400 truncate text-ellipsis">
                                     Purchased on {formatDate(new Date().toString())}
                                 </span>
                             </div>
@@ -572,15 +572,13 @@ function AllTeams() {
                                 </div>
                             </div>
                             <div className="p-0 my-auto flex flex-col w-4/12">
-                                <span className="my-auto font-medium truncate overflow-ellipsis">
-                                    {getPlan(sub)?.name}
-                                </span>
-                                <span className="text-sm my-auto text-gray-400 truncate overflow-ellipsis">
+                                <span className="my-auto font-medium truncate text-ellipsis">{getPlan(sub)?.name}</span>
+                                <span className="text-sm my-auto text-gray-400 truncate text-ellipsis">
                                     Purchased on {formatDate(sub?.startDate)}
                                 </span>
                             </div>
                             <div className="p-0 my-auto flex flex-col w-2/12">
-                                <span className="my-auto truncate text-gray-500 overflow-ellipsis">
+                                <span className="my-auto truncate text-gray-500 text-ellipsis">
                                     {slots.filter((s) => s.state !== "cancelled" && s.teamSubscription.id === sub.id)
                                         .length || "–"}
                                 </span>

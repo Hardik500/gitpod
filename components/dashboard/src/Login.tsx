@@ -207,7 +207,7 @@ export function Login() {
                                         onClick={() => openLogin(providerFromContext.host)}
                                     >
                                         {iconForAuthProvider(providerFromContext.authProviderType)}
-                                        <span className="pt-2 pb-2 mr-3 text-sm my-auto font-medium truncate overflow-ellipsis">
+                                        <span className="pt-2 pb-2 mr-3 text-sm my-auto font-medium truncate text-ellipsis">
                                             Continue with {simplifyProviderName(providerFromContext.host)}
                                         </span>
                                     </button>
@@ -219,7 +219,7 @@ export function Login() {
                                             onClick={() => openLogin(ap.host)}
                                         >
                                             {iconForAuthProvider(ap.authProviderType)}
-                                            <span className="pt-2 pb-2 mr-3 text-sm my-auto font-medium truncate overflow-ellipsis">
+                                            <span className="pt-2 pb-2 mr-3 text-sm my-auto font-medium truncate text-ellipsis">
                                                 Continue with {simplifyProviderName(ap.host)}
                                             </span>
                                         </button>

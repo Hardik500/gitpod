@@ -184,13 +184,13 @@ function WorkspaceEntry(p: { ws: WorkspaceAndInstance }) {
                     <div className="font-medium text-gray-800 dark:text-gray-100 truncate hover:text-blue-600 dark:hover:text-blue-400 truncate">
                         {p.ws.workspaceId}
                     </div>
-                    <div className="text-sm overflow-ellipsis truncate text-gray-400 truncate">
+                    <div className="text-sm text-ellipsis truncate text-gray-400 truncate">
                         {getProject(WorkspaceAndInstance.toWorkspace(p.ws))}
                     </div>
                 </div>
                 <div className="flex flex-col w-5/12 self-center truncate">
-                    <div className="text-gray-500 overflow-ellipsis truncate">{p.ws.description}</div>
-                    <div className="text-sm text-gray-400 overflow-ellipsis truncate">
+                    <div className="text-gray-500 text-ellipsis truncate">{p.ws.description}</div>
+                    <div className="text-sm text-gray-400 text-ellipsis truncate">
                         {ContextURL.getNormalizedURL(p.ws)?.toString()}
                     </div>
                 </div>

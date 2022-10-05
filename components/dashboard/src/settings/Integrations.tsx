@@ -336,21 +336,21 @@ function GitProviders() {
                                 </div>
                             </ItemFieldIcon>
                             <ItemField className="w-4/12 xl:w-3/12 flex flex-col my-auto">
-                                <span className="my-auto font-medium truncate overflow-ellipsis">
+                                <span className="my-auto font-medium truncate text-ellipsis">
                                     {ap.authProviderType}
                                 </span>
-                                <span className="text-sm my-auto text-gray-400 truncate overflow-ellipsis dark:text-gray-500">
+                                <span className="text-sm my-auto text-gray-400 truncate text-ellipsis dark:text-gray-500">
                                     {ap.host}
                                 </span>
                             </ItemField>
                             <ItemField className="w-6/12 xl:w-3/12 flex flex-col my-auto">
-                                <span className="my-auto truncate text-gray-500 overflow-ellipsis dark:text-gray-400">
+                                <span className="my-auto truncate text-gray-500 text-ellipsis dark:text-gray-400">
                                     {getUsername(ap.authProviderId) || "–"}
                                 </span>
                                 <span className="text-sm my-auto text-gray-400 dark:text-gray-500">Username</span>
                             </ItemField>
                             <ItemField className="hidden xl:w-5/12 xl:flex xl:flex-col my-auto">
-                                <span className="my-auto truncate text-gray-500 overflow-ellipsis dark:text-gray-400">
+                                <span className="my-auto truncate text-gray-500 text-ellipsis dark:text-gray-400">
                                     {getPermissions(ap.authProviderId)?.join(", ") || "–"}
                                 </span>
                                 <span className="text-sm my-auto text-gray-400 dark:text-gray-500">Permissions</span>
@@ -484,10 +484,10 @@ function GitIntegrations() {
                                 </div>
                             </ItemFieldIcon>
                             <ItemField className="w-3/12 flex flex-col my-auto">
-                                <span className="font-medium truncate overflow-ellipsis">{ap.type}</span>
+                                <span className="font-medium truncate text-ellipsis">{ap.type}</span>
                             </ItemField>
                             <ItemField className="w-7/12 flex flex-col my-auto">
-                                <span className="my-auto truncate text-gray-500 overflow-ellipsis">{ap.host}</span>
+                                <span className="my-auto truncate text-gray-500 text-ellipsis">{ap.host}</span>
                             </ItemField>
                             <ItemFieldContextMenu menuEntries={gitProviderMenu(ap)} />
                         </Item>
