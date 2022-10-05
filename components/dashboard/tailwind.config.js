@@ -30,6 +30,7 @@ module.exports = {
                 "gitpod-kumquat-dark": "#FF8A00",
                 "gitpod-kumquat-darker": "#f28300",
                 "gitpod-kumquat-gradient": "linear-gradient(137.41deg, #FFAD33 14.37%, #FF8A00 91.32%)",
+                current: 'currentColor',
             },
             container: {
                 center: true,
