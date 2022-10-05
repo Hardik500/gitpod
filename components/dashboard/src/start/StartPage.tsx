@@ -100,7 +100,7 @@ export function StartPage(props: StartPageProps) {
                 <img
                     src={gitpodIconUA}
                     alt="Gitpod's logo"
-                    className={`h-16 flex-shrink-0 ${
+                    className={`h-16 shrink-0 ${
                         error || phase === StartPhase.Stopped || phase === StartPhase.IdeReady ? "" : "animate-bounce"
                     }`}
                 />

@@ -275,16 +275,16 @@ export default function () {
                                                     >
                                                         {lastPrebuilds.get(p.id)?.info?.branch}
                                                     </div>
-                                                    <span className="flex-shrink-0 mx-1 text-gray-400 dark:text-gray-600">
+                                                    <span className="shrink-0 mx-1 text-gray-400 dark:text-gray-600">
                                                         ·
                                                     </span>
-                                                    <div className="flex-shrink-0 text-gray-400 dark:text-gray-500 group-hover:text-gray-800 dark:group-hover:text-gray-300">
+                                                    <div className="shrink-0 text-gray-400 dark:text-gray-500 group-hover:text-gray-800 dark:group-hover:text-gray-300">
                                                         {dayjs(lastPrebuilds.get(p.id)?.info?.startedAt).fromNow()}
                                                     </div>
                                                 </Link>
                                                 <Link
                                                     to={`/${teamOrUserSlug}/${p.slug || p.name}/prebuilds`}
-                                                    className="flex-shrink-0 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                                                    className="shrink-0 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                                                 >
                                                     View All &rarr;
                                                 </Link>
