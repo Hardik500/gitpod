@@ -15,7 +15,6 @@
     "query-string": "^7.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-intl-tel-input": "^8.2.0",
     "react-router-dom": "^5.2.0",
     "xterm": "^4.11.0",
     "xterm-addon-fit": "^0.5.0"
@@ -43,12 +42,17 @@
     "eslint-config-react-app": "^7.0.1",
     "postcss": "^8.4.17",
     "react-app-rewired": "^2.2.1",
+    "react-intl-tel-input": "^8.2.0",
     "react-scripts": "^5.0.1",
     "tailwind-underline-utils": "^1.1.2",
     "tailwindcss": "^3.1.8",
     "tailwindcss-filters": "^3.0.0",
     "typescript": "~4.4.2",
     "web-vitals": "^1.1.1"
+  },
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
   },
   "scripts": {
     "start": "react-app-rewired start",
